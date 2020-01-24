@@ -1,0 +1,122 @@
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.flex{
+display: flex;
+flex-direction: column;
+width: 740px;
+padding: 20px;
+
+}
+.flexrow
+{
+	display: flex;
+	flex-direction: row;
+}
+.articlebox
+{
+	display: flex;
+	flex-direction: column;
+	width: calc(190px * 3 + 18px * 2);
+}
+
+.flex > *{
+min-width: 100px;
+min-height: 100px;
+}
+.flex header{
+background: rgb(102,0,0);
+align-items: center;
+} /*navigation unterer balken in schwarz*/
+
+#headernav{
+background: rgb(0, 0, 0);
+}
+
+#headernav li{
+float: left;
+}
+
+#headernav ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+#headernav a
+{
+	text-decoration: none;
+	color: rgb(255,255,255);
+	font-family: Arial, Helvetica, sans-serif;
+}
+.flex .main
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	/* re u li padding eingerückt*/
+}
+.flex #date
+{
+	text-align: right;
+	margin-top: 5px;
+	padding-bottom: 0px;
+}
+
+.flex .topnews{
+	width: 100%;
+	background-color: rgb(153,153,153);
+	padding-right: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.imgwithtext{
+	position: relative;
+	text-align: center;
+	width: 190px;
+	height: 150px;
+	padding: 0px;
+
+}
+.imgmiddle{
+	position: relative;
+	text-align: center;
+	width: 190px;
+	height: 150px;
+	padding: 0px 18px 0px 18px;
+}
+.textinimagemiddle{
+	color: white;
+	width: 190px;
+	height: 60px;
+	position: absolute;
+	bottom: 0px;
+	left: 18px;
+	background-color: black;
+}
+.textinimage{
+	color: white;
+	width: 190px;
+	height: 60px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background-color: black;
+
+
+}
+li a {
+	display: block;
+	padding: 10px;
+}
+article{
+background: rgba(200, 200, 200, .8);
+}
+aside{
+background: rgba(200, 200, 200, .6);
+}
+footer{
+background: rgba(200, 200, 200, .4);
+}
