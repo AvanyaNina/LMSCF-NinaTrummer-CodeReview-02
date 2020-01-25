@@ -12,15 +12,17 @@
 	<header>
 		<div id="headerimg">
 			<img src="img/logo-newspaper-cf.png" alt="Logo Newspaper" title="Logo Newspaper"/>
-			<img src="img/banner-1.png" alt="Banner1" title="Banner1"/>
+            <div class="hidden-mobile">
+                <img src="img/banner-1.png" alt="Banner1" title="Banner1" class="hidden-mobile"/>
+            </div>
 		</div>
 		
-		<nav id="headernav">
+		<nav class="nav">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Tech</a></li>
-				<li><a href="#">Culture</a></li>
-				<li><a href="#">Video</a></li>
+				<li class = "navbarlinks"><a href="index.html">Home</a></li>
+				<li class = "navbarlinks"><a href="culture.html">Tech</a></li>
+				<li class = "navbarlinks"><a href="tech.html">Culture</a></li>
+				<li class = "navbarlinks"><a href="video.html">Video</a></li>
 			</ul>
 		</nav>
 
@@ -30,34 +32,106 @@
 	<div class="main">
 
 	<div id="date">
-		25.01.2020
+		Saturday, 25.01.2020
 	</div>
-	<div class="topnews">Topnews</div>
-	<div class="articlebox">
-		<div class="flexrow">
-			<div class="imgwithtext">
-				<img src="img/nasa.png" alt="Nasa picture" title="Nasa picture" class="imgwithtext"/> <!-- class verkleinert div, image tag wird mit dem weiterer class verkleinert-->
-				<div class="textinimage">NASA is trying to squash conpiracy theories about the space station leak</div>
-			</div>
+    <div class="flexcol">
+        <div class="articlesheader">Topnews</div>
+        <div class="flexrow">
+            <div class="articlebox">
+                <div class="flexrow">
+                    <div class="imgwithtext">
+                        <img src="img/nasa.png" alt="Nasa picture" title="Nasa picture" class="imgwithtext"/> <!-- class verkleinert div, image tag wird mit dem weiterer class verkleinert-->
+                        <div class="textinimage">NASA is trying to squash conpiracy theories about the space station leak</div>
+                    </div>
 
-			<div class="imgmiddle">
-				<img src="img/nasa.png" alt="Nasa picture" title="Nasa picture" class="imgwithtext"/> <!-- class verkleinert div, image tag wird mit dem weiterer class verkleinert-->
-				<div class="textinimagemiddle">NASA is trying to squash conpiracy theories about the space station leak</div>
-			</div>
+                    <div class="imgmiddle">
+                        <img src="img/eu.png" alt="EU picture" title="EU picture" class="imgwithtext"/> <!-- class verkleinert div, image tag wird mit dem weiterer class verkleinert-->
+                        <div class="textinimagemiddle">EU approves controversial Copyright Directive, including Internet´link tax´</div>
+                    </div>
 
-			<div class="imgwithtext"><img src="img/nasa.png" alt="Nasa picture" title="Nasa picture" class="imgwithtext"/> <!-- class verkleinert div, image tag wird mit dem weiterer class verkleinert-->
-				<div class="textinimage">NASA is trying to squash conpiracy theories about the space station leak</div>
-			</div>
-		</div>
-		<div class="topnews">Popular</div>
-<article>dklshfjhfgo-lhdsfgksfg
-</article>
-<aside>sdgsgdsgf
-</aside>
+                    <div class="imgwithtext"><img src="img/jeff.png" alt="Jeff Bezos picture" title="Jeff Bezos picture" class="imgwithtext"/> <!-- class verkleinert div, image tag wird mit dem weiterer class verkleinert-->
+                        <div class="textinimage">Jeff Bezoes is going to create schools where ´the child is the customer</div>
+                    </div>
+                </div>
+                <div class="articlesheader">Popular</div>
+                <div class="flexrow">
+                    <div class="imgwithtext">
+                        <img src="img/polar.png" alt="" title="Watch Polar" class="imgwithtext"/> <!-- class verkleinert div, image tag wird mit dem weiterer class verkleinert-->
+                        <div class="textinimage">Polar´s new fitness watch will measure the wattage of your exercise</div>
+                    </div>
+
+                    <div class="imgmiddle">
+                        <img src="img/musk.jpg" alt="Smoking man" title="Smoking man" class="imgwithtext"/> <!-- class verkleinert div, image tag wird mit dem weiterer class verkleinert-->
+                        <div class="textinimagemiddle">Elon Musk smokes marijuana live on web show</div>
+                    </div>
+
+                    <div class="imgwithtext"><img src="img/snowden.jpg" alt="Laptop" title="Laptop" class="imgwithtext"/> <!-- class verkleinert div, image tag wird mit dem weiterer class verkleinert-->
+                        <div class="textinimage">Edward Snowden surveillance powers ruled unlawful</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebanner">
+                <img src="img/banner-2.png" class="sidebannerimg1" />
+            </div> 
+        </div>            
+        <div class="middlebanner">
+            <img src="img/banner-3.png" class="middlebannerimg" />
+        </div>
+        <div class="flexrow">
+            <div class="articlebox">
+                <div class="flexrow">
+                    <div class="largeimgwithtext">
+                        <img src="img/iphone.png" class="largeimgwithtext" />
+                        <div class="largetextinimage">How to preorder the iPhone XS, XS Max, and XR</div>
+                    </div>
+                    <div class="largeimgwithtext">
+                        <img src="img/iphone.png" class="largeimgwithtext" />
+                        <div class="largetextinimage">How to preorder the iPhone XS, XS Max, and XR</div>
+                    </div>
+                </div>
+                <div class="flexrow">
+                    <div class="largeimgwithtext">
+                        <img src="img/iphone.png" class="largeimgwithtext" />
+                        <div class="largetextinimage">How to preorder the iPhone XS, XS Max, and XR</div>
+                    </div>
+                    <div class="largeimgwithtext">
+                        <img src="img/iphone.png" class="largeimgwithtext" />
+                        <div class="largetextinimage">How to preorder the iPhone XS, XS Max, and XR</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebanner">
+                <img src="img/banner-4.png" class="sidebannerimg2" />
+            </div>
+        </div>
+
+    <!--    
+    <article>dklshfjhfgo-lhdsfgksfg
+    </article>
+    <aside>sdgsgdsgf
+    </aside>
+    -->
+    
+    </div>
 </div>
 
-<footer>sdfagdsgddff
+<footer>
+        <nav class="nav footernav">
+			<ul>
+				<li class = "navbarlinks"><a href="index.html">Home</a></li>
+				<li class = "navbarlinks"><a href="culture.html">Tech</a></li>
+				<li class = "navbarlinks"><a href="tech.html">Culture</a></li>
+				<li class = "navbarlinks"><a href="video.html">Video</a></li>
+			</ul>
+		</nav>
+		<div class="footertext"><img src="img/logo-newspaper-cf.png" alt="Logo Newspaper" title="Logo Newspaper"/>Nina Trummer -CodeFactory 2020</div>
+			
+		
 </footer>
 </div>
 </body>
 </html>
+
+
+
+

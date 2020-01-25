@@ -1,60 +1,152 @@
+/*
+
+Desktop
+
+Große Bilder 280 x 225
+Beschriftung 90px hoch
+
+______________________
+Mobile Bilder 175 x 135
+
+*/
+
 body
 {
 	font-family: Arial, Helvetica, sans-serif;
 }
-.flex{
-display: flex;
-flex-direction: column;
-width: 740px;
-padding: 20px;
 
+@media only screen and not (max-width: 480px) {
+    .visible-mobile {
+        display: none !important;
+    }
+    .hidden-mobile {
+        display: inline !important;
+    }
 }
+@media only screen and (max-width: 480px) {
+    .visible-mobile {
+        display: inline !important;
+    }
+
+    .hidden-mobile {
+        display: none !important;
+    }
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    width: 740px;
+    padding: 20px;
+}
+
+/*Reihe mit Flexbox-Elementen*/
 .flexrow
 {
 	display: flex;
 	flex-direction: row;
 }
+/*Spalte mit Flexbox-Elementen*/
+.flexcol
+{
+	display: flex;
+	flex-direction: column;
+    vertical-align: auto;
+}
+/*Erste Artikelbox*/
 .articlebox
 {
 	display: flex;
 	flex-direction: column;
-	width: calc(190px * 3 + 18px * 2);
+	width: calc(190px * 3 + 9px * 2);
+    height: 350px;
+}
+.articlebox2
+{
+    display:flex;
+    flex-direction: column;
+    width: calc(190px * 3 + 9px * 2);
+    height: 480px;
+}
+/*Seitenleiste für Banner*/
+.sidebanner
+{
+    padding-left: 8px;
+}
+.sidebannerimg1
+{
+    height: 350px;
+    width: 95px;
+}
+.sidebannerimg2
+{
+    height: 480px;
+    width: 95px;
+}
+.middlebanner
+{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+.middlebannerimg
+{
+    width:640px;
+    height:75px;
 }
 
-.flex > *{
+/*.flex > *{
 min-width: 100px;
 min-height: 100px;
-}
-.flex header{
-background: rgb(102,0,0);
-align-items: center;
-} /*navigation unterer balken in schwarz*/
+}*/
 
-#headernav{
+/*Kopfzeile für Bilder*/
+#headerimg
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Kopfzeile für Bilder*/
+.flex > header{
+background: rgb(102,0,0);
+
+} /*navigation unterer balken in schwarz*/
+/*Navigation*/
+.nav{
 background: rgb(0, 0, 0);
 }
 
-#headernav li{
+.nav li{
 float: left;
 }
 
-#headernav ul{
+.nav ul{
 list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
 }
 
-#headernav a
+.nav a
 {
 	text-decoration: none;
 	color: rgb(255,255,255);
 	font-family: Arial, Helvetica, sans-serif;
 }
-.flex .main
+/*Navigation Ende*/
+
+/*Navigation im Footer*/
+.footernav a
+{
+    font-size:smaller;
+}
+
+.main
 {
 	padding-left: 10px;
 	padding-right: 10px;
+    width: 700px
 	/* re u li padding eingerückt*/
 }
 .flex #date
@@ -62,55 +154,86 @@ overflow: hidden;
 	text-align: right;
 	margin-top: 5px;
 	padding-bottom: 0px;
+	font-size: 9px;
+	color: rgb(86, 101, 115);
 }
 
-.flex .topnews{
+.flex .articlesheader{
+    font-size: larger;
 	width: 100%;
-	background-color: rgb(153,153,153);
+	background-color: rgb(229, 231, 233);
 	padding-right: 0px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: rgb(86, 101, 115);
 }
 
+/*Obere Bilder DESKTOP*/
 .imgwithtext{
 	position: relative;
-	text-align: center;
+	text-align: left;
 	width: 190px;
 	height: 150px;
 	padding: 0px;
-
+	font-size: 11px;
 }
 .imgmiddle{
 	position: relative;
-	text-align: center;
+	text-align: left; 
 	width: 190px;
 	height: 150px;
-	padding: 0px 18px 0px 18px;
+	padding: 0px 9px 0px 9px;
 }
 .textinimagemiddle{
 	color: white;
 	width: 190px;
-	height: 60px;
+	height: 45px;
 	position: absolute;
 	bottom: 0px;
-	left: 18px;
+	left: 9px;
 	background-color: black;
+	font-size: 11px;
+	margin-top: 30px;
 }
 .textinimage{
 	color: white;
 	width: 190px;
-	height: 60px;
+	height: 45px;
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
 	background-color: black;
-
-
+	margin-top: 30px;
 }
+
+/*Obere Bilder ENDE*/
+
+.largeimgwithtext{
+	position: relative;
+	text-align: left;
+	width: 280px;
+	height: 225px;
+	padding: 0px;
+	font-size: 11px;
+}
+.largetextinimage{
+    font-size: large;
+	color: white;
+	width: 280px;
+	height: 90px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background-color: black;
+	margin-top: 30px;
+}
+
 li a {
 	display: block;
 	padding: 10px;
 }
+
+/*Teststuff*/
 article{
 background: rgba(200, 200, 200, .8);
 }
@@ -118,5 +241,11 @@ aside{
 background: rgba(200, 200, 200, .6);
 }
 footer{
-background: rgba(200, 200, 200, .4);
+background: rgb(0, 0, 0);
+width:100%;
+}
+
+.footertext{
+	position: center;
+	color: white;
 }
